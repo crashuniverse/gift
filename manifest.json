@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "gift",
+  "version": "1.0",
+  "description": "Supercharge your presentation mode with a little gift",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>",
+        "*://*.mozilla.org/*"
+      ],
+      "js": [
+        "index.js"
+      ]
+    }
+  ]
+}
